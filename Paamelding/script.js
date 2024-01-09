@@ -1,3 +1,12 @@
-const element = document.querySelector("p");
+const navnInp = document.querySelector("#navnFelt");
+const trykkBtn = document.querySelector("#trykkKnapp");
+const utskriftEl = document.querySelector("#utskrift");
 
-console.log(element)
+trykkBtn.onclick = () => {
+    let navn = navnInp.value;
+    navnInp.value = "";
+
+    //utskriftEl.innerHTML += "Velkommen " + navn + "!<br>";
+    utskriftEl.innerHTML += `Velkommen ${navn}!<br>`;
+}
+
